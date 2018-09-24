@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <a href="#"><h1>Log out</h1></a>
+</header>
+    <div class="main-container">
+        <div class="main-block">
+            <div class="category-dropdown">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle selector" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span>Select a category</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu cat" aria-labelledby="dropdownMenu">
+                    <div class="img-block">
+                        <img src="./img/micro-cat.png">
+                        <img src="./img/dancing-cat.png">
+                        <img src="./img/time-cat.png">
+                        <img src="./img/paint-cat.png">
+                        <img src="./img/football-cat.png">
+                        <img src="./img/trips-cat.png">
+                        <img src="./img/science-cat.png">
+                    </div>
+                </ul>
+            </div>
+            </div>
+            <div class="city-dropdown">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle selector" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span>Choose a city</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Minsk</a></li>
+                        <li><a href="#">Grodno</a></li>
+                        <li><a href="#">Vitebsk</a></li>
+                        <li><a href="#">Brest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-info-input">
+                <input type="text" placeholder="Inter the event name" class="form-control inpt name"  aria-describedby="basic-addon2">
+                <div class="datetime-inputs inpt">
+                    <div class="date-input">
+                <input type="date" id="date">
+                    </div>
+                    <div class="starttime-input">
+                <label for="appt-time">Start time:</label>
+                <input type="time" id="appt-time" name="appt-time"
+                       required />
+                    </div>
+                    <div class="endtime-input">
+                <label for="appt-time1">End time:</label>
+                <input type="time" id="appt-time1" name="appt-time"
+                       required />
+                    </div>
+                </div>
+                <div class="upload"></div>
+                <textarea type="text" placeholder="Inter description" class="form-control inpt desc"  aria-describedby="basic-addon2"></textarea>
+
+            </div>
+
+            <div class="btn-container">
+                <button type="button" class="btn btn-default login-btn">Upload</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
